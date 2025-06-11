@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Suggestion Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Smart Book Suggestion Portal</h1>
+    <div class="filter">
+      <select id="genre">
+        <option value="">Select Genre</option>
+        <option value="fiction">Fiction</option>
+        <option value="self-help">Self-help</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="history">History</option>
+      </select>
+      <select id="mood">
+        <option value="">Select Mood</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="curious">Curious</option>
+      </select>
+      <select id="time">
+        <option value="">Select Reading Time</option>
+        <option value="short">Under 2 hrs</option>
+        <option value="medium">2-5 hrs</option>
+        <option value="long">5+ hrs</option>
+      </select>
+      <button onclick="suggestBooks()">Suggest Books</button>
+    </div>
+    <div id="suggestions"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
